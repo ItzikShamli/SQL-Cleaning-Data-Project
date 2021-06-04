@@ -1,0 +1,47 @@
+-- Data cleaning project
+-- This dataset contains 1000 rows of people who purchases or did not purchase bikes
+-- The dataset has some NULL values which needs to be removed before EDA
+
+-- STEP 1: REMOVE ALL ROWS WITH NULL VALUES
+
+SELECT * 
+FROM
+	dbo.bikes
+
+DELETE FROM dbo.bikes 
+WHERE Marital_Status IS NULL
+
+DELETE FROM dbo.bikes 
+WHERE Gender IS NULL
+
+DELETE FROM dbo.bikes 
+WHERE Income IS NULL
+
+DELETE FROM dbo.bikes 
+WHERE Children IS NULL
+
+DELETE FROM dbo.bikes 
+WHERE Education IS NULL
+
+DELETE FROM dbo.bikes 
+WHERE Occupation IS NULL
+
+DELETE FROM dbo.bikes 
+WHERE Home_Owner IS NULL
+
+DELETE FROM dbo.bikes 
+WHERE Cars IS NULL
+
+DELETE FROM dbo.bikes 
+WHERE Commute_Distance IS NULL
+
+DELETE FROM dbo.bikes 
+WHERE Region IS NULL
+
+DELETE FROM dbo.bikes 
+WHERE Age IS NULL
+
+DELETE FROM dbo.bikes 
+WHERE Purchased_Bike IS NULL
+
+-- STEP 2: TRIM ALL SPACES
